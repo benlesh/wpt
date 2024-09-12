@@ -518,7 +518,7 @@ promise_test(async t => {
 
   async function* asyncGenerator() {
     try {
-      for (let n = 0; n < 10; n++) {
+      for (let n = 0; n < 4; n++) {
         await Promise.resolve(); // some delay for "realism".
         yield n;
       }
